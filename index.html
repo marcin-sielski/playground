@@ -11,6 +11,7 @@
             navigator.serviceWorker.getRegistrations().then(function(registrations) {
  for(let registration of registrations) {
   registration.unregister();
+ } });
             navigator.serviceWorker.register('sw1.js').then(function (registration) {
                 navigator.serviceWorker.ready.then(function(registration) {
                 var title = 'Yay a message.';
@@ -30,7 +31,6 @@
             });
 
    
- } });
           }
         }
       });
