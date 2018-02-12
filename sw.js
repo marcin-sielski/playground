@@ -1,25 +1,25 @@
 self.addEventListener('statechange', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('updatefound', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('controllerchange', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('error', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('message', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('install', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('activate', function(event) {
@@ -42,13 +42,13 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('notoficationclick', function(event) {
-
+  console.log(event);
 });
 
 self.addEventListener('notoficationclose', function(event) {
-
+  console.log(event);
 });
