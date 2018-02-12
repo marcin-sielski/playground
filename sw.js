@@ -28,6 +28,11 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   console.log('fetch: '+JSON.stringify(event));
+  dweetio.get_latest_dweet_for('25935C0E2C7F42558309E27E216C1D65', function(error, dweet) {
+        if (error) return;
+    dweet = dweet[0];
+    console.log(dweet);
+  });
 });
 
 self.addEventListener('notificationclick', function(event) {
