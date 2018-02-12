@@ -9,6 +9,7 @@
         if (result === 'granted') {
           if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js').then(function (registration) {
+                console.log(navigator.serviceWorker);
                 var title = 'Yay a message.';
                 var body = 'We have received a push message.';
                 var tag = 'simple-push-demo-notification-tag';
