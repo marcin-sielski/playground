@@ -1,28 +1,28 @@
-self.addEventHandler('statechange', function(event) {
+self.addEventListener('statechange', function(event) {
 
 });
 
-self.addEventHandler('updatefound', function(event) {
+self.addEventListener('updatefound', function(event) {
 
 });
 
-self.addEventHandler('controllerchange', function(event) {
+self.addEventListener('controllerchange', function(event) {
 
 });
 
-self.addEventHandler('error', function(event) {
+self.addEventListener('error', function(event) {
 
 });
 
-self.addEventHandler('message', function(event) {
+self.addEventListener('message', function(event) {
 
 });
 
-self.addEventHandler('install', function(event) {
+self.addEventListener('install', function(event) {
 
 });
 
-self.addEventHandler('activate', function(event) {
+self.addEventListener('activate', function(event) {
   var title = 'Yay a message.';
   var body = 'We have received a push message.';
   var tag = 'simple-push-demo-notification-tag';
@@ -41,6 +41,14 @@ self.addEventHandler('activate', function(event) {
   );
 });
 
-self.addEventHandler('fetch', function(event) {
+self.addEventListener('fetch', function(event) {
+
+});
+
+self.addEventListener('notoficationclick', function(event) {
+
+});
+
+self.addEventListener('notoficationclose', function(event) {
 
 });
