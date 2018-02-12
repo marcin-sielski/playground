@@ -8,6 +8,9 @@
       Notification.requestPermission(function(result) {
         if (result === 'granted') {
           if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+ for(let registration of registrations) {
+  registration.unregister();
             navigator.serviceWorker.register('sw.js').then(function (registration) {
                 navigator.serviceWorker.ready.then(function(registration) {
                 var title = 'Yay a message.';
@@ -25,6 +28,9 @@
                 });
                 });
             });
+
+   
+ } });
           }
         }
       });
