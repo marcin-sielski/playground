@@ -1,1 +1,16 @@
 
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      Notification.requestPermission(function(result) {
+        if (result === 'granted') {
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
